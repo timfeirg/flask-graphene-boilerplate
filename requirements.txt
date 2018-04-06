@@ -1,0 +1,7 @@
+gunicorn
+smart_getenv
+Flask
+Flask_SQLAlchemy
+Flask-GraphQL
+graphene>=2.0
+graphene-sqlalchemy
