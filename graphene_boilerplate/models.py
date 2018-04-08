@@ -69,3 +69,7 @@ class Item(BaseModelMixin):
     __tablename__ = 'item'
     key = db.Column(db.String(64), unique=True)
     value = db.Column(db.JSON)
+
+    @classmethod
+    def get_by_key(cls, key):
+        return cls.query.filter_by(key=key).first()
